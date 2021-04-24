@@ -44,6 +44,7 @@ function Word(idNumber, letter, hint, definition, word, correct) {
 function showDefinition(pos) {
 	$("#js--hint").html(words[pos].hint);
 	$("#js--definition").html(words[pos].definition);
+	$("#js--user-answer").focus();
 }
 
 var remainingWords = 25;
